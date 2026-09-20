@@ -85,7 +85,7 @@ PRESET_HELP = {
 preset_cols = st.columns(len(C.PRESETS))
 for i, name in enumerate(C.PRESETS.keys()):
     with preset_cols[i]:
-        st.button(name, use_container_width=True, on_click=apply_preset, args=(name,), help=PRESET_HELP[name])
+        st.button(name, width="stretch", on_click=apply_preset, args=(name,), help=PRESET_HELP[name])
 
 st.caption(
     "🔗 Die Adresszeile oben spiegelt Ihre aktuelle Konfiguration wider – einfach kopieren, "
@@ -107,7 +107,7 @@ with st.sidebar:
 
     st.button(
         "🎲 Neue Instanz generieren",
-        use_container_width=True,
+        width="stretch",
         on_click=randomize_seed,
         help="Würfelt neue Auftragsbreiten und -mengen.",
     )
@@ -201,7 +201,7 @@ gc1.metric(
 gc2.metric(
     "Tatsächlich besuchte Zustände", f"{stats['states_explored']:,}" + ("" if stats["reached"] else " (Grenze erreicht)"),
 )
-st.plotly_chart(build_states_chart(result), use_container_width=True, key="states_chart")
+st.plotly_chart(build_states_chart(result), width="stretch", key="states_chart")
 
 if not stats["reached"]:
     st.warning(
