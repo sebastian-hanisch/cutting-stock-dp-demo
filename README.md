@@ -24,7 +24,7 @@ Pricing-Teilproblem lösen.
 ## Empirisch UND rechnerisch bestätigte Explosion
 
 Bei festem Bedarf pro Typ wächst die tatsächlich besuchte Zustandszahl mit der
-Auftragstypenzahl $n$ etwa wie $5^n$: 4 Typen → 90 Zustände, 6 Typen → 1.440, 8
+Auftragstypenzahl $n$ etwa wie $4^n$: 4 Typen → 90 Zustände, 6 Typen → 1.440, 8
 Typen → 24.000 (2,2 s) - eine Verdopplung von $n$ macht den Zustandsraum ~267×
 größer, unabhängig von der Rollenbreite. Ein Extremfall (8 Typen, Bedarf bis 5)
 erreicht ~65.000 Zustände in 6,9 s - bewusst als eigenes Preset genutzt, das die
@@ -94,6 +94,4 @@ pytest tests/ -v
 
 ---
 
-Teil des [Operations-Research-Demo-Portfolios](https://sebastianhanisch.net/demos.html) von
-[Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning.
-Interesse an einer maßgeschneiderten Lösung? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zur Reihe: [Exakte Suche erklärt: Rucksack und Cutting Stock](https://sebastianhanisch.net/konzepte-exakte-suche.html).
