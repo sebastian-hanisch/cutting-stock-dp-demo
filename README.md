@@ -24,10 +24,10 @@ Pricing-Teilproblem lösen.
 ## Empirisch UND rechnerisch bestätigte Explosion
 
 Bei festem Bedarf pro Typ wächst die tatsächlich besuchte Zustandszahl mit der
-Auftragstypenzahl $n$ etwa wie $4^n$: 4 Typen → 90 Zustände, 6 Typen → 1.440, 8
-Typen → 24.000 (2,2 s) - eine Verdopplung von $n$ macht den Zustandsraum ~267×
+Auftragstypenzahl $n$ etwa wie $4^n$: 4 Typen → 89 Zustände, 6 Typen → 1.439, 8
+Typen → 23.999 (2,2 s) - eine Verdopplung von $n$ macht den Zustandsraum ~270×
 größer, unabhängig von der Rollenbreite. Ein Extremfall (8 Typen, Bedarf bis 5)
-erreicht ~65.000 Zustände in 6,9 s - bewusst als eigenes Preset genutzt, das die
+erreicht ~64.800 Zustände in 6,9 s - bewusst als eigenes Preset genutzt, das die
 Sicherheitsgrenze auslöst, statt vermieden zu werden.
 
 ## Sicherheitsgrenze wie dynamic-programming-demo, nicht wie ein Suchbaum-Verfahren
